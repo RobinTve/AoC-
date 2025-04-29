@@ -10,7 +10,8 @@ public class Day02
 
     public static void Run()
     {
-        int result = 0;
+        int resultPart1 = 0;
+        int resultPart2 = 0;
 
         try
         {
@@ -26,13 +27,18 @@ public class Day02
                 int gameId = int.Parse(parts[0].Split(' ', StringSplitOptions.RemoveEmptyEntries)[1]);
                 string[] gameData = parts[1].Replace(';', ',').Split(',');
 
-                if (IsGameValid(gameData))
+                
+                if (Part1(gameData))
                 {
-                    result += gameId;
+                    resultPart1 += gameId;
                 }
+                
+                resultPart2 += Part2(gameData);
+                
             }
 
-            Console.WriteLine($"Result: {result}");
+            Console.WriteLine($"Result Part 1: {resultPart1}");
+            Console.WriteLine($"Result Part 2: {resultPart2}");
         }
         catch (IOException e)
         {
@@ -41,7 +47,7 @@ public class Day02
         }
     }
 
-    private static bool IsGameValid(string[] draws)
+    private static bool Part1(string[] draws)
     {
         foreach (var draw in draws)
         {
@@ -59,5 +65,34 @@ public class Day02
             }
         }
         return true;
+    }
+    
+    private static int Part2(string[] draws)
+    {
+        var highestRed = 0;
+        var highestGreen = 0;
+        var highestBlue = 0;
+        foreach (var draw in draws)
+        {
+            var trimmed = draw.Trim();
+            var parts = trimmed.Split(' ');
+            int count = int.Parse(parts[0]);
+            string color = parts[1];
+
+            switch (color)
+            {
+                case "red" when count > highestRed:
+                    highestRed = count;
+                    break;
+                case "green" when count > highestGreen:
+                    highestGreen = count;
+                    break;
+                case "blue" when count > highestBlue:
+                    highestBlue = count;
+                    break;
+            }
+        }
+        
+        return highestRed * highestGreen * highestBlue;
     }
 }
