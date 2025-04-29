@@ -1,0 +1,14 @@
+C:\Users\robin\RiderProjects\AoC\AoC\bin\Debug\net9.0\AoC.exe
+C:\Users\robin\RiderProjects\AoC\AoC\bin\Debug\net9.0\AoC.deps.json
+C:\Users\robin\RiderProjects\AoC\AoC\bin\Debug\net9.0\AoC.runtimeconfig.json
+C:\Users\robin\RiderProjects\AoC\AoC\bin\Debug\net9.0\AoC.dll
+C:\Users\robin\RiderProjects\AoC\AoC\bin\Debug\net9.0\AoC.pdb
+C:\Users\robin\RiderProjects\AoC\AoC\obj\Debug\net9.0\AoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\robin\RiderProjects\AoC\AoC\obj\Debug\net9.0\AoC.AssemblyInfoInputs.cache
+C:\Users\robin\RiderProjects\AoC\AoC\obj\Debug\net9.0\AoC.AssemblyInfo.cs
+C:\Users\robin\RiderProjects\AoC\AoC\obj\Debug\net9.0\AoC.csproj.CoreCompileInputs.cache
+C:\Users\robin\RiderProjects\AoC\AoC\obj\Debug\net9.0\AoC.dll
+C:\Users\robin\RiderProjects\AoC\AoC\obj\Debug\net9.0\refint\AoC.dll
+C:\Users\robin\RiderProjects\AoC\AoC\obj\Debug\net9.0\AoC.pdb
+C:\Users\robin\RiderProjects\AoC\AoC\obj\Debug\net9.0\AoC.genruntimeconfig.cache
+C:\Users\robin\RiderProjects\AoC\AoC\obj\Debug\net9.0\ref\AoC.dll
