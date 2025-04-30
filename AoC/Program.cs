@@ -1,4 +1,5 @@
 ﻿using AoC.Day02;
+using AoC.Day03;
 class Program
 {
     static void Main(string[] args)
@@ -11,7 +12,9 @@ class Program
             case "2":
                 Day02.Run();
                 break;
-            
+            case "3":
+                Day03.Run();
+                break;
             default:
                 break;
         }
